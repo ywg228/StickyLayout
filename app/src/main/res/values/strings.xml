@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StickyLayout</string>
+
+    <string name="refresh">刷新</string>
+    <string name="copy_link">复制链接</string>
+    <string name="share_link">分享链接</string>
+    <string name="open_link_in_browser">用浏览器打开</string>
+    <string name="menu_web_vertical">竖屏显示</string>
+    <string name="menu_web_horizontal">横屏显示</string>
+
+    <string name="menu_share">分享</string>
+    <string name="copy_success">复制成功</string>
+</resources>
