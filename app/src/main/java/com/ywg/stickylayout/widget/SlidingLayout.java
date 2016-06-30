@@ -14,6 +14,15 @@ import android.widget.FrameLayout;
 
 import com.ywg.stickylayout.R;
 
+/**
+ * 实现类似IOS的下拉上拉回弹的果冻效果
+ * public void setSlidingOffset(float slidingOffset) 设置控件的滑动阻力，有效值为0.1F~1.0F，值越小阻力越大，默认为0.5F
+ public void setTargetView(View view) 设置控件的前景View
+ public void setBackgroundView(View view) 设置控件的背景View
+ public void setSlidingListener(SlidingListener slidingListener) 给控件设置监听，可以监听滑动情况
+ public void setSlidingMode(int mode) 设置滑动模式
+ public void setSlidingDistance(int max) 设置最大滑动距离，仅在top模式下有效
+ */
 public class SlidingLayout extends FrameLayout {
 
     private int mTouchSlop;//系统允许最小的滑动判断值
