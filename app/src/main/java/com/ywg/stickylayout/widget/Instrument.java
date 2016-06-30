@@ -1,4 +1,4 @@
-package com.ywg.stickylayout.utils;
+package com.ywg.stickylayout.widget;
 
 import android.view.View;
 

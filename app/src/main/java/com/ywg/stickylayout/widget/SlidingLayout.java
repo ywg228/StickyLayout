@@ -13,7 +13,6 @@ import android.widget.AbsListView;
 import android.widget.FrameLayout;
 
 import com.ywg.stickylayout.R;
-import com.ywg.stickylayout.utils.Instrument;
 
 public class SlidingLayout extends FrameLayout {
 

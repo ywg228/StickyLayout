@@ -11,23 +11,27 @@
         android:id="@+id/btn_listview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ListView"/>
+        android:text="ListView"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/btn_recyclerview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RecyclerView"/>
+        android:text="RecyclerView"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/btn_webview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WebView"/>
+        android:text="WebView"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/btn_scrollview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ScrollView"/>
+        android:text="ScrollView"
+        android:layout_margin="10dp"/>
 </LinearLayout>
