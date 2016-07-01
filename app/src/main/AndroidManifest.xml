@@ -25,7 +25,7 @@
         <activity android:name=".activity.RecyclerViewActivity"/>
         <activity
             android:name=".activity.WebViewActivity"
-            android:configChanges="orientation|screenSize"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:hardwareAccelerated="true"
             android:launchMode="singleTask"/>
 
