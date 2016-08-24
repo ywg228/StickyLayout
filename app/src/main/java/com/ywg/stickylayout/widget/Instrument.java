@@ -4,6 +4,9 @@ import android.view.View;
 
 import com.nineoldandroids.view.ViewHelper;
 
+/**
+ * Created by Ywg on 2016/6/29.
+ */
 public class Instrument {
     private static Instrument mInstrument;
     public static Instrument getInstance(){

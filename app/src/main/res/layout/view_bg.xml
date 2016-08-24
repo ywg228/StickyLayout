@@ -10,16 +10,16 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
-        android:text="developed by HomhomLin"
+        android:text="developed by ywg228"
         android:textColor="#f5f3f3"
-        android:textSize="12sp"/>
+        android:textSize="14sp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="2dp"
-        android:text="本项目由HomhomLin开发"
+        android:text="本项目由ywg228开发"
         android:textColor="#f5f3f3"
-        android:textSize="14sp"/>
+        android:textSize="16sp"/>
 </LinearLayout>

@@ -12,19 +12,25 @@ import android.widget.ListView;
 import com.ywg.stickylayout.widget.SlidingLayout;
 import com.ywg.stickylayout.R;
 
+/**
+ * Created by Ywg on 2016/6/29.
+ */
 public class ListViewActivity extends AppCompatActivity {
 
-    private SlidingLayout mSlidingLayout;
     private final static String TAG = "ListViewActivity";
+
+    private SlidingLayout mSlidingLayout;
+
+    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
+
         mSlidingLayout = (SlidingLayout) findViewById(R.id.slidingLayout);
-//        View front = View.inflate(this,R.layout.view_front,null);
-        ListView listView = (ListView) this.findViewById(R.id.listview);
-        listView.setAdapter(new Adapter());
+        mListView = (ListView) this.findViewById(R.id.listview);
+        mListView.setAdapter(new Adapter());
         mSlidingLayout.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -54,7 +60,7 @@ public class ListViewActivity extends AppCompatActivity {
 
             }
         });
-//        mSlidingLayout.setFrontView(front);
+
     }
 
     class Adapter extends BaseAdapter {

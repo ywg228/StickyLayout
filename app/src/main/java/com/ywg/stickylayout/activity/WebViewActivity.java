@@ -25,11 +25,12 @@ import android.widget.ProgressBar;
 
 import com.ywg.stickylayout.R;
 import com.ywg.stickylayout.utils.CommonUtil;
-import com.ywg.stickylayout.utils.IntentUtils;
-import com.ywg.stickylayout.utils.NetWorkUtils;
+import com.ywg.stickylayout.utils.IntentUtil;
+import com.ywg.stickylayout.utils.NetworkUtil;
+
 
 /**
- * 展示网页的
+ * Created by Ywg on 2016/6/29.
  */
 public class WebViewActivity extends AppCompatActivity {
 
@@ -92,10 +93,10 @@ public class WebViewActivity extends AppCompatActivity {
                 CommonUtil.copyLink(mContext, url);
                 break;
             case R.id.action_open_link:
-                IntentUtils.openLinkInBrowser(mContext, url);
+                IntentUtil.openLinkInBrowser(mContext, url);
                 break;
             case R.id.action_share_link:
-                IntentUtils.startAppShareText(mContext, mWebView.getUrl());
+                IntentUtil.startAppShareText(mContext, mWebView.getUrl());
                 break;
             case R.id.action_switch_screen_mode:
                 switchScreenConfiguration(item);
@@ -118,7 +119,7 @@ public class WebViewActivity extends AppCompatActivity {
         //设置H5的缓存打开,默认关闭
         mWebSettings.setAppCacheEnabled(true);
         // 建议缓存策略为，判断是否有网络，有的话，使用LOAD_DEFAULT,无网络时，使用LOAD_CACHE_ELSE_NETWORK
-        if (NetWorkUtils.isNetWorkConnected(this)) {
+        if (NetworkUtil.isNetWorkConnected(this)) {
             mWebSettings.setCacheMode(WebSettings.LOAD_DEFAULT);   // 根据cache-control决定是否从网络上取数据。
         } else {
             mWebSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);   //优先加载缓存
@@ -238,7 +239,7 @@ public class WebViewActivity extends AppCompatActivity {
         @Override
         public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype,
                                     long contentLength) {
-            IntentUtils.openLinkInBrowser(mContext, url);
+            IntentUtil.openLinkInBrowser(mContext, url);
         }
 
     }

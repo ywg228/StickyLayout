@@ -8,6 +8,9 @@ import android.widget.Button;
 
 import com.ywg.stickylayout.R;
 
+/**
+ * Created by Ywg on 2016/6/29.
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button mBtnListView;
@@ -25,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initViews();
 
         setListeners();
-
 
     }
 

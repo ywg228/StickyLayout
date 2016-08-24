@@ -6,12 +6,11 @@ import android.net.Uri;
 
 import com.ywg.stickylayout.R;
 
+
 /**
- * Created by maning on 16/3/3.
- * <p/>
- * 页面跳转
+ * Created by Ywg on 2016/6/29.
  */
-public class IntentUtils {
+public class IntentUtil {
     /**
      * 分享带文本
      *

@@ -9,14 +9,18 @@ import android.net.NetworkInfo;
 import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 
-public class NetWorkUtils {
+
+/**
+ * Created by Ywg on 2016/6/29.
+ */
+public class NetworkUtil {
 
     // 手机网络类型
     public static final int NETTYPE_WIFI = 0x01;
     public static final int NETTYPE_CMWAP = 0x02;
     public static final int NETTYPE_CMNET = 0x03;
 
-    private NetWorkUtils() {
+    private NetworkUtil() {
         /* cannot be instantiated */
         throw new UnsupportedOperationException("cannot be instantiated");
     }
@@ -151,7 +155,7 @@ public class NetWorkUtils {
 
                             @Override
                             public void onClick(DialogInterface arg0, int arg1) {
-                                NetWorkUtils.openSetting(context);
+                                NetworkUtil.openSetting(context);
                             }
                         }).setNegativeButton("取消", null);
         builder.create().show();
