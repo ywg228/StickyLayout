@@ -314,6 +314,7 @@ public class SlidingLayout extends FrameLayout {
         switch (event.getAction()){
             case MotionEvent.ACTION_DOWN:
 //                Log.i("onTouchEvent", "down");
+                mLastMotionY = getMotionEventY(event, mActivePointerId);
                 break;
             case MotionEvent.ACTION_MOVE:
                 float delta = 0.0f;
